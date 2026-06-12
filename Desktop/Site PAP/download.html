@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domus Control – Download</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-png" href="img/Logo_White.png">
+</head>
+<body class="scroll-page">
+
+<div class="page-bg">
+    <img src="img/hero_about.png" alt="">
+</div>
+
+<header class="navbar">
+    <div class="logo">
+        <img src="img/Logo_White.png" alt="Domus Control Logo">
+        <div class="logo-text">
+            <span class="logo-name">DOMUS</span>
+            <span class="logo-sub">CONTROL</span>
+        </div>
+    </div>
+    
+    <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+        <span></span><span></span><span></span>
+    </button>
+    
+    <nav id="navMenu">
+        <ul>
+            <li><a href="index.html" data-i18n="nav_home">Início</a></li>
+            <li><a href="technology.html" data-i18n="nav_tech">Tecnologia</a></li>
+            <li><a href="sobre_nos.html" data-i18n="nav_team">Sobre Nós</a></li>
+            <li><a href="download.html" class="active" data-i18n="nav_download">Download</a></li>
+        </ul>
+    </nav>
+
+    <button class="lang-btn" onclick="toggleLang()" title="Mudar idioma">
+        <span class="lang-option pt-option active">PT</span>
+        <span class="lang-divider"></span>
+        <span class="lang-option en-option">EN</span>
+    </button>
+</header>
+
+<main class="download-page">
+    
+    <div class="download-hero">
+        <h1 data-i18n="download_title">Get the App</h1>
+        <p data-i18n="download_subtitle">Download Domus Control and start managing your smart home today.<br> Available for Android.</p>
+    </div>
+
+    <div class="download-card">
+        <div class="download-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                <polyline points="7 10 12 15 17 10"/>
+                <line x1="12" y1="15" x2="12" y2="3"/>
+            </svg>
+        </div>
+        
+        <h2>Domus Control</h2>
+        <p class="version" data-i18n="download_version">Version 1.0.0 · 45 MB</p>
+        <p class="desc" data-i18n="download_desc">Requires Android 7.0 or higher. <br>You may need to allow installation from unknown sources.</p>
+        
+        <a href="app-debug.apk" download="Domus_Control.apk" class="download-main-btn" data-i18n="download_btn">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                <polyline points="7 10 12 15 17 10"/>
+                <line x1="12" y1="15" x2="12" y2="3"/>
+            </svg>
+            Download for Android
+        </a>
+        
+    </div>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

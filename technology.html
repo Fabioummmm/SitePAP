@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domus Control – Technology</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-png" href="img/Logo_White.png">
+</head>
+<body class="scroll-page tech">
+
+<div class="page-bg">
+    <img src="img/hero_maquete.png" alt="">
+</div>
+
+<header class="navbar">
+    <div class="logo">
+        <img src="img/Logo_White.png" alt="Domus Control Logo">
+        <div class="logo-text">
+            <span class="logo-name">DOMUS</span>
+            <span class="logo-sub">CONTROL</span>
+        </div>
+    </div>
+    
+    <nav id="navMenu">
+        <ul>
+            <li><a href="index.html"data-i18n="nav_home">Início</a></li>
+            <li><a href="technology.html" class="active" data-i18n="nav_tech">Tecnologia</a></li>
+            <li><a href="sobre_nos.html" data-i18n="nav_team">Sobre Nós</a></li>
+            <li><a href="download.html" data-i18n="nav_download">Download</a></li>
+        </ul>
+    </nav>
+
+    <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+        <span></span><span></span><span></span>
+    </button>
+
+    <button class="lang-btn" onclick="toggleLang()" title="Mudar idioma">
+        <span class="lang-option pt-option active">PT</span>
+        <span class="lang-divider"></span>
+        <span class="lang-option en-option">EN</span>
+    </button>
+</header>
+
+<main class="tech-page">
+
+    <div class="about-header">
+        <span class="about-eyebrow" data-i18n="tech_eyebrow">Technology</span>
+        <h1 data-i18n="tech_title_page">The physical<br>model</h1>
+        <p data-i18n="tech_subtitle">A scale model of a real home, built from scratch to demonstrate Domus Control working with actual hardware — in real time.</p>
+    </div>
+
+    <div class="about-section">
+        <span class="about-section-label" data-i18n="devices_label">Devices</span>
+        <h2 data-i18n="devices_title">What's inside</h2>
+        <p data-i18n="devices_text">Every feature in the app has a real counterpart built into the model. Control them remotely and watch them respond almost instantly.</p>
+        <div class="feature-grid">
+            <div class="f-card">
+                <span class="f-card-icon"></span>
+                <h3 data-i18n="device1_title">Lights</h3>
+                <p data-i18n="device1_text">LED strips installed per room. Toggle or dim them remotely, set schedules or let sleep mode turn them off automatically.</p>
+            </div>
+            <div class="f-card">
+                <span class="f-card-icon"></span>
+                <h3 data-i18n="device2_title">Shutters</h3>
+                <p data-i18n="device2_text">Step motors open and close the window shutters. Fully controllable with timers and daily schedules from the app.</p>
+            </div>
+            <div class="f-card">
+                <span class="f-card-icon"></span>
+                <h3 data-i18n="device3_title">Door</h3>
+                <p data-i18n="device3_text">A servo motor locks and unlocks the front door. Every unlock sends a push notification to all family members.</p>
+            </div>
+            <div class="f-card">
+                <span class="f-card-icon"></span>
+                <h3 data-i18n="device4_title">Heater</h3>
+                <p data-i18n="device4_text">A Peltier cell simulates heating and cooling. Adjusts automatically based on live outdoor temperature from OpenWeather.</p>
+            </div>
+            <div class="f-card">
+                <span class="f-card-icon"></span>
+                <h3 data-i18n="device5_title">Speakers</h3>
+                <p data-i18n="device5_text">Integrated with Spotify. Control music playback directly from the app without switching between apps.</p>
+            </div>
+            <div class="f-card">
+                <span class="f-card-icon"></span>
+                <h3 data-i18n="device6_title">Sensors</h3>
+                <p data-i18n="device6_text">Temperature sensors feed live readings back to Firebase. Used by the app to make automatic heating decisions.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="about-section">
+        <span class="about-section-label" data-i18n="hardware_label">Hardware</span>
+        <h2 data-i18n="hardware_title">Components used</h2>
+        <p data-i18n="hardware_text">Every component was chosen to keep the system responsive, reliable and close to what a real smart home would use.</p>
+        <div class="comp-grid">
+            <div class="comp-row">
+                <div class="comp-dot"></div>
+                <div>
+                    <h4 data-i18n="comp1_title">ESP32 Microcontroller</h4>
+                    <p data-i18n="comp1_text">The brain of the model. Connects to Wi-Fi, listens to Firebase and controls every device in real time.</p>
+                </div>
+            </div>
+            <div class="comp-row">
+                <div class="comp-dot"></div>
+                <div>
+                    <h4 data-i18n="comp2_title">Step Motors</h4>
+                    <p data-i18n="comp2_text">Drive the shutter mechanism. Precise angle control allows full open, full close and everything in between.</p>
+                </div>
+            </div>
+            <div class="comp-row">
+                <div class="comp-dot"></div>
+                <div>
+                    <h4 data-i18n="comp3_title">Servo Motor</h4>
+                    <p data-i18n="comp3_text">Controls the door lock. Rotates to a locked or unlocked position on command from the app.</p>
+                </div>
+            </div>
+            <div class="comp-row">
+                <div class="comp-dot"></div>
+                <div>
+                    <h4 data-i18n="comp4_title">Peltier Cell</h4>
+                    <p data-i18n="comp4_text">Thermoelectric module that heats or cools depending on polarity. Used to simulate a real home heater.</p>
+                </div>
+            </div>
+            <div class="comp-row">
+                <div class="comp-dot"></div>
+                <div>
+                    <h4 data-i18n="comp5_title">LED Strips</h4>
+                    <p data-i18n="comp5_text">Installed across all rooms of the model. Individually addressable and controlled per room via Firebase.</p>
+                </div>
+            </div>
+            <div class="comp-row">
+                <div class="comp-dot"></div>
+                <div>
+                    <h4 data-i18n="comp6_title">Temperature Sensor</h4>
+                    <p data-i18n="comp6_text">Reads the ambient temperature inside the model and reports back to the app in real time.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a href="index.html" class="about-back" data-i18n="back_home">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12"/>
+            <polyline points="12 5 19 12 12 19"/>
+        </svg>
+        Back to Home
+    </a>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
